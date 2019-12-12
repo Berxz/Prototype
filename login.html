@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+ <style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
 </head>
 <body align=center>
 
-<div class="jumbotron text-center">
-  <h1>Logo</h1>
-</div>
+
+  <img src="logo.png" alt="Logo" style="width:200px;height:200px;"><br>
+
   
   <form action="/action_page.php">
 <input type="text" name="Username" placeholder="Username"><br><br>
@@ -20,6 +43,39 @@
 </form>
    
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+   
 <style>
 .button {
   background: #00B007;
@@ -40,6 +96,8 @@
 
 
 }
+
+
 </style>
 
 <style>
@@ -59,9 +117,19 @@
 </style>
 </head>
 <body>
-<button class="button button5">Login</button><br>
+<style>
+body {
+  background-image: url('background.jpg');
+}
+</style>
+<button class="button button5" onclick="myFunction()">Login</button><br>
 <a href="register.html" button class="button button1">Register</button></br>
 
+<script >
+function myFunction() {
+alert("You are not registered yet!");
+}
+</script>
 </body>
 </html>
 
